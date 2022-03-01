@@ -1,6 +1,6 @@
 package com.imanardhi.moviepedia.di.modules
 
-import com.imanardhi.moviepedia.MainActivity
+import com.imanardhi.moviepedia.view.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -8,7 +8,7 @@ import dagger.android.ContributesAndroidInjector
 abstract class MainActivityModule {
     @ContributesAndroidInjector(
         modules = [
-
+            FragmentBuildersModule::class
         ]
     )
 
