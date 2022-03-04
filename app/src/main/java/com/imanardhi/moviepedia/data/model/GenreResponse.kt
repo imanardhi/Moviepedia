@@ -1,4 +1,4 @@
-package com.imanardhi.moviepedia.data
+package com.imanardhi.moviepedia.data.model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
