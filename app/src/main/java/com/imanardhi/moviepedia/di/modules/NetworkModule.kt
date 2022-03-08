@@ -29,7 +29,7 @@ object NetworkModule {
             .cache(cache)
             .addInterceptor { chain: Interceptor.Chain ->
                 val newRequest = chain.request().newBuilder()
-                    //.addHeader("Authorization", "Client-ID" + Config.API_TMDB)
+                    .addHeader("Authorization", "Bearer " + Config.API_TMDB)
                     .build()
                 chain.proceed(newRequest)
             }
