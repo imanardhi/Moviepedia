@@ -7,7 +7,7 @@ import com.imanardhi.moviepedia.data.model.GenreResponse
 import com.imanardhi.moviepedia.utils.STARTING_PAGE
 import java.io.IOException
 
-class GenreDataSource(private val tmdbService: TmdbService, private val orderBy: String) :
+class GenreDataSource(private val tmdbService: TmdbService) :
     PagingSource<Int, GenreResponse>() {
     override fun getRefreshKey(state: PagingState<Int, GenreResponse>): Int? {
         return state.anchorPosition
